@@ -203,7 +203,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 30%;
-  transform: translate(500%, 110%);
+  transform: translate(500%, 100%);
   z-index: 0;
 }
 .nature__leaf {
@@ -246,6 +246,8 @@ body {
   transform: translate(150%, 30%);
 }
 .nature__body {
+  position: relative;
+  z-index: 2;
   transform: translate(0%, 0);
   animation-name: bodyb;
   animation-duration: 30s;
