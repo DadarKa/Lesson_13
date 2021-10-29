@@ -203,7 +203,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 30%;
-  transform: translate(500%, 90%);
+  transform: translate(500%, 110%);
   z-index: 0;
 }
 .nature__leaf {
@@ -428,7 +428,7 @@ body {
     transform: translate(1200%, -200%);
   }
   100% {
-    transform: translate(1600%, -100%);
+    transform: translate(1700%, -100%);
     background-color: #fa7406;
     box-shadow: 5px 2px 30px 20px #fa7406;
   }
@@ -442,13 +442,13 @@ body {
 }
 @keyframes body {
   0% {
-    transform: translate(0%, 0%);
+    transform: translate(0%, 10%);
   }
   50% {
-    transform: translate(50%, 0%);
+    transform: translate(50%, 10%);
   }
   100% {
-    transform: translate(100%, 0%);
+    transform: translate(100%, 10%);
   }
 }
 .car__salon {
