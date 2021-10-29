@@ -1,0 +1,1010 @@
+/* Для шриштів: налаштування шрифта+кирилиця, підключаємо завжди! Чистимо непотрібні розміри шрифта в посиланні, для кращої оптимізації.
+ &display=swap&subset=cyrillic-ext */
+
+/*@import url("https://fonts.googleapis.com/css?family=Chivo:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext");
+
+/*@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "Polaris";
+  src: url("../fonts/Polaris.woff2") format("woff2"), url("../fonts/Polaris.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-CaptionBold.woff2") format("woff2"), url("../fonts/PTSans-CaptionBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Caption.woff2") format("woff2"), url("../fonts/PTSans-Caption.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+
+/* Обнулення СТИЛІВ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+.footer {
+  font-family: "Roboto", serif;
+}
+.wrapper {
+  min-height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 249, 255, 1) 0%,
+    rgba(203, 235, 255, 1) 32%,
+    rgba(203, 235, 255, 1) 40%,
+    rgba(60, 147, 73, 1) 48%,
+    rgba(13, 145, 30, 1) 58%,
+    rgba(21, 145, 38, 1) 62%,
+    rgba(50, 77, 79, 1) 65%,
+    rgba(9, 72, 76, 1) 69%,
+    rgba(9, 72, 76, 1) 75%,
+    rgba(9, 72, 76, 1) 83%,
+    rgba(9, 72, 76, 1) 95%
+  );
+  animation-name: wrapper;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes wrapper {
+  0% {
+    background: linear-gradient(
+      to bottom,
+      rgb(210, 216, 221) 0%,
+      rgb(182, 210, 228) 32%,
+      rgb(182, 209, 226) 40%,
+      rgb(49, 122, 60) 48%,
+      rgb(10, 114, 24) 58%,
+      rgb(17, 112, 29) 62%,
+      rgb(40, 61, 63) 65%,
+      rgb(7, 54, 58) 69%,
+      rgb(7, 58, 61) 75%,
+      rgb(6, 51, 54) 83%,
+      rgb(5, 43, 46) 95%
+    );
+  }
+  25% {
+    background: linear-gradient(
+      to bottom,
+      rgba(240, 249, 255, 1) 0%,
+      rgba(203, 235, 255, 1) 32%,
+      rgba(203, 235, 255, 1) 40%,
+      rgba(60, 147, 73, 1) 48%,
+      rgba(13, 145, 30, 1) 58%,
+      rgba(21, 145, 38, 1) 62%,
+      rgba(50, 77, 79, 1) 65%,
+      rgba(9, 72, 76, 1) 69%,
+      rgba(9, 72, 76, 1) 75%,
+      rgba(9, 72, 76, 1) 83%,
+      rgba(9, 72, 76, 1) 95%
+    );
+  }
+  30% {
+    background: linear-gradient(
+      to bottom,
+      rgba(240, 249, 255, 1) 0%,
+      rgba(203, 235, 255, 1) 32%,
+      rgba(203, 235, 255, 1) 40%,
+      rgba(60, 147, 73, 1) 48%,
+      rgba(13, 145, 30, 1) 58%,
+      rgba(21, 145, 38, 1) 62%,
+      rgba(50, 77, 79, 1) 65%,
+      rgba(9, 72, 76, 1) 69%,
+      rgba(9, 72, 76, 1) 75%,
+      rgba(9, 72, 76, 1) 83%,
+      rgba(9, 72, 76, 1) 95%
+    );
+  }
+  50% {
+    background: linear-gradient(
+      to bottom,
+      rgba(240, 249, 255, 1) 0%,
+      rgba(203, 235, 255, 1) 32%,
+      rgba(203, 235, 255, 1) 40%,
+      rgba(60, 147, 73, 1) 48%,
+      rgba(13, 145, 30, 1) 58%,
+      rgba(21, 145, 38, 1) 62%,
+      rgba(50, 77, 79, 1) 65%,
+      rgba(9, 72, 76, 1) 69%,
+      rgba(9, 72, 76, 1) 75%,
+      rgba(9, 72, 76, 1) 83%,
+      rgba(9, 72, 76, 1) 95%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      to bottom,
+      rgb(164, 168, 172) 0%,
+      rgb(149, 173, 187) 32%,
+      rgb(149, 171, 185) 40%,
+      rgb(39, 97, 47) 48%,
+      rgb(7, 75, 16) 58%,
+      rgb(13, 87, 23) 62%,
+      rgb(29, 44, 46) 65%,
+      rgb(5, 38, 41) 69%,
+      rgb(5, 42, 44) 75%,
+      rgb(4, 35, 37) 83%,
+      rgb(3, 27, 29) 95%
+    );
+  }
+}
+/* --------------- */
+.nature {
+  position: relative;
+  z-index: 100;
+}
+.nature__tree {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  transform: translate(500%, 80%);
+  z-index: 0;
+}
+.nature__leaf {
+  width: 220px;
+  height: 200px;
+  border-radius: 50% 50% 30% 30%;
+  border: 1px solid #76ac1f;
+  background-color: #76ac1f;
+  box-shadow: 1px 2px 10px 2px #76ac1f;
+  position: absolute;
+  bottom: 80px;
+  left: -10px;
+  z-index: 5;
+  animation-name: leaf;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes leaf {
+  0% {
+    left: -10px;
+  }
+
+  50% {
+    left: -5px;
+    background-color: #6ea11c;
+    box-shadow: 1px 2px 10px 2px #6ea11c;
+  }
+
+  100% {
+    left: -10px;
+  }
+}
+.nature__stem {
+  width: 50px;
+  height: 150px;
+  border-radius: 1% 1% 1% 1%;
+  border: 1px solid #271303;
+  background-color: #271303;
+  box-shadow: 1px 2px 2px 2px #271303;
+  transform: translate(150%, 30%);
+}
+.nature__body {
+  transform: translate(0%, 0);
+  animation-name: bodyb;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes bodyb {
+  0% {
+    transform: translate(0%, 0);
+  }
+  15% {
+    transform: translate(15%, -50%);
+  }
+  35% {
+    transform: translate(15%, -100%);
+  }
+  50% {
+    transform: translate(15%, -200%);
+  }
+  75% {
+    transform: translate(15%, -300%);
+  }
+  95% {
+    transform: translate(15%, -400%);
+  }
+  100% {
+    transform: translate(15%, -500%);
+  }
+}
+.nature__birds {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  transform: translate(100%, 0);
+  animation-name: birds;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes birds {
+  0% {
+    border-radius: 50%;
+  }
+
+  50% {
+    border-radius: 30%;
+    transform: translate(105%, 0);
+  }
+
+  100% {
+    border-radius: 30%;
+    transform: translate(120%, 0);
+  }
+}
+
+.nature__item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  transform: translate(100%, 0);
+  animation-name: item;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes item {
+  0% {
+    border-radius: 50%;
+  }
+
+  50% {
+    border-radius: 30%;
+  }
+
+  100% {
+    border-radius: 30%;
+  }
+}
+.nature__bird {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  transform: translate(400%, -100%);
+  animation-name: bird;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes bird {
+  0% {
+    border-radius: 50%;
+    transform: translate(400%, -100%);
+  }
+
+  50% {
+    border-radius: 30%;
+    transform: translate(405%, -100%);
+  }
+
+  100% {
+    border-radius: 30%;
+    transform: translate(420%, -100%);
+  }
+}
+.nature__items {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  transform: translate(100%, 0);
+  animation-name: items;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes items {
+  0% {
+    border-radius: 50%;
+  }
+
+  50% {
+    border-radius: 30%;
+  }
+
+  100% {
+    border-radius: 30%;
+  }
+}
+.car {
+  transform: translate(0, 5%);
+}
+.car::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #faf606;
+  box-shadow: 5px 2px 50px 20px #faf606;
+  transform: translate(400%, -200%);
+  animation-name: sun;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes sun {
+  0% {
+    background-color: #fa7406;
+    box-shadow: 5px 2px 30px 20px #fa7406;
+    transform: translate(0%, -100%);
+  }
+  25% {
+    background-color: #fab906;
+    box-shadow: 5px 2px 30px 20px #fab906;
+    transform: translate(200%, -150%);
+  }
+  50% {
+    background-color: #faf606;
+    box-shadow: 5px 2px 30px 20px #faf606;
+    transform: translate(800%, -200%);
+  }
+  75% {
+    background-color: #fab906;
+    box-shadow: 5px 2px 30px 20px #fab906;
+    transform: translate(1200%, -200%);
+  }
+  100% {
+    transform: translate(1500%, -100%);
+    background-color: #fa7406;
+    box-shadow: 5px 2px 30px 20px #fa7406;
+  }
+}
+.car__body {
+  animation-name: body;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+@keyframes body {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(50%, 0%);
+  }
+  100% {
+    transform: translate(100%, 0%);
+  }
+}
+.car__salon {
+  width: 320px;
+  height: 200px;
+  border-radius: 90% 70% 10% 20%;
+  border: 15px solid #ffffff60;
+  background-color: #fef082;
+  box-shadow: -2px 2px 5px 1px #5f5f5b;
+  position: relative;
+  left: 50px;
+}
+.car__salon::before {
+  content: "";
+  width: 110px;
+  height: 100px;
+  border-radius: 50% 50% 40% 40%;
+  border: 15px solid #ffffff60;
+  border-bottom: none;
+  background-color: #fef082;
+  box-shadow: -2px 2px 3px 1px #5f5f5b;
+  position: absolute;
+  bottom: -45px;
+  left: -33px;
+  z-index: 3;
+}
+.car__salon::after {
+  content: "";
+  width: 110px;
+  height: 100px;
+  border-radius: 50% 50% 40% 40%;
+  border: 15px solid #ffffff60;
+  border-bottom: none;
+  background-color: #fef082;
+  box-shadow: -2px 2px 3px 1px #5f5f5b;
+  position: absolute;
+  top: 115px;
+  right: -30px;
+}
+.car__hood {
+  width: 150px;
+  height: 110px;
+  border-radius: 0% 100% 40% 10%;
+  border: 15px solid #ffffff60;
+  border-left: none;
+  background-color: #fef082;
+  position: absolute;
+  top: 75px;
+  right: -115px;
+}
+.car__hood::before {
+  content: "";
+  width: 63px;
+  height: 80px;
+  border-radius: 50% 70% 50% 0%;
+  border: 2px solid #0000006b;
+  background: linear-gradient(
+    45deg,
+    rgba(94, 185, 238, 1) 18%,
+    rgba(194, 221, 237, 1) 44%,
+    rgba(220, 234, 241, 1) 53%,
+    rgba(94, 185, 238, 1) 65%,
+    rgba(94, 185, 238, 1) 96%
+  );
+  transform: skew(22deg, 0deg);
+  position: absolute;
+  top: -80px;
+  left: -15px;
+}
+.car__hood::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #1d1b1b;
+  border-radius: 5px;
+  transform: skew(0deg, -7deg);
+  position: absolute;
+  top: -5px;
+  left: 2px;
+  transform-origin: 0 0;
+  animation-name: hood;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+@keyframes hood {
+  0% {
+    top: -5px;
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    top: -5px;
+  }
+}
+
+.car__left-wind {
+}
+.car__right-wind {
+}
+.car__left-wheel {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 15px solid #000000;
+  background-color: #626161;
+  position: absolute;
+  bottom: -60px;
+  left: -30px;
+  z-index: 4;
+  animation-name: wheel;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wheel {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+  }
+  100% {
+  }
+}
+
+.car__left-wheel::before {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  transform: rotate(0deg);
+}
+.car__left-wheel::after {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  transform: rotate(90deg);
+}
+.car__right-wheel {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 15px solid #000000;
+  background-color: #626161;
+  position: absolute;
+  top: 130px;
+  right: -28px;
+  z-index: 1;
+  animation-name: wheel;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.car__right-wheel::before {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  animation-name: wheel;
+  transform: rotate(0deg);
+}
+.car__right-wheel::after {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  transform: rotate(90deg);
+}
+.car__left-wheel-deg {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fef082;
+  top: 170px;
+  left: 10px;
+  z-index: 15;
+  animation-name: wheels;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes wheels {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+  }
+  100% {
+  }
+}
+
+.car__left-wheel-deg::before {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  bottom: -26px;
+  left: 7px;
+  z-index: 10;
+  transform: rotate(45deg);
+}
+.car__left-wheel-deg::after {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  bottom: -26px;
+  left: 7px;
+  z-index: 10;
+  transform: rotate(-45deg);
+}
+.car__right-wheel-deg {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #fef082;
+  top: 150px;
+  left: 258px;
+  z-index: 10;
+  animation-name: wheels;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.car__right-wheel-deg::before {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  top: -26px;
+  left: 6px;
+  z-index: 6;
+  transform: rotate(45deg);
+}
+.car__right-wheel-deg::after {
+  content: "";
+  width: 5px;
+  height: 70px;
+  border-radius: 10%;
+  border: 1px solid #fef082;
+  position: absolute;
+  top: -26px;
+  left: 6px;
+  z-index: 6;
+  transform: rotate(-45deg);
+}
+.car__window {
+  position: relative;
+}
+.car__front-window {
+}
+.car__wipers {
+}
+.car__left-window {
+  width: 105px;
+  height: 80px;
+  border: 2px solid #0000006b;
+  border-right: none;
+  border-radius: 230% 30% 1% 1%;
+  background: linear-gradient(
+    45deg,
+    rgba(94, 185, 238, 1) 18%,
+    rgba(194, 221, 237, 1) 44%,
+    rgba(220, 234, 241, 1) 53%,
+    rgba(94, 185, 238, 1) 65%,
+    rgba(94, 185, 238, 1) 96%
+  );
+  position: absolute;
+  bottom: 95px;
+  left: 65px;
+}
+.car__right-window {
+  width: 140px;
+  height: 90px;
+  border-radius: 20% 20% 1% 1%;
+  border: 2px solid #0000006b;
+  background: linear-gradient(
+    45deg,
+    rgba(94, 185, 238, 1) 18%,
+    rgba(194, 221, 237, 1) 44%,
+    rgba(220, 234, 241, 1) 53%,
+    rgba(94, 185, 238, 1) 65%,
+    rgba(94, 185, 238, 1) 96%
+  );
+  position: absolute;
+  bottom: 95px;
+  left: 155px;
+  z-index: 2;
+  transform: skew(10deg);
+}
+.car__rear-window {
+}
+.car__light {
+  position: relative;
+}
+.car__front-headlight {
+  width: 30px;
+  height: 20px;
+  border-radius: 50% 50% 50% 50%;
+  border: 2px solid #0000006b;
+  background: linear-gradient(
+    to bottom,
+    rgba(220, 234, 241, 1) 18%,
+    rgba(194, 221, 237, 1) 44%,
+    rgba(222, 231, 237, 1) 58%,
+    rgba(220, 234, 241, 1) 62%,
+    rgba(220, 234, 241, 1) 65%,
+    rgba(220, 234, 241, 1) 96%
+  );
+  position: absolute;
+  bottom: 55px;
+  left: 395px;
+  z-index: 2;
+  transform: rotate(40deg);
+}
+.car__front-headlight::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  box-shadow: -22px -70px 30px 50px #dceaf1ad;
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  transform: rotate(110deg);
+  animation-name: headlight;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes headlight {
+  0% {
+    top: 0px;
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: none;
+  }
+  80% {
+    top: -30px;
+    box-shadow: -22px -70px 30px 50px #dceaf1ad;
+  }
+  100% {
+    top: -30px;
+    box-shadow: -22px -70px 30px 50px #dceaf1ad;
+  }
+}
+.car__font-blink {
+  width: 10px;
+  height: 10px;
+  border-radius: 50% 50% 50% 50%;
+  border: 2px solid #0000006b;
+  background-color: #faf606;
+  position: absolute;
+  bottom: 35px;
+  left: 395px;
+  z-index: 2;
+  animation-name: blink;
+  animation-duration: 1s;
+  transition-delay: 2s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes blink {
+  0% {
+    background-color: #faf606;
+  }
+  50% {
+    background-color: #e92806;
+  }
+  100% {
+    background-color: #faf606;
+  }
+}
+.car__rear-headlight {
+  width: 30px;
+  height: 20px;
+  border-radius: 50% 50% 50% 50%;
+  border: 2px solid #0000006b;
+  background: linear-gradient(
+    to bottom,
+    rgba(233, 40, 6, 1) 18%,
+    rgba(194, 221, 237, 1) 40%,
+    rgba(222, 231, 237, 1) 58%,
+    rgba(233, 40, 6, 1) 88%,
+    rgba(233, 40, 6, 1) 96%
+  );
+  position: absolute;
+  bottom: 65px;
+  left: 40px;
+  z-index: 2;
+  transform: rotate(-80deg);
+}
+.car__rear-blink {
+  width: 10px;
+  height: 10px;
+  border-radius: 50% 50% 50% 50%;
+  border: 2px solid #0000006b;
+  background-color: #faf606;
+  position: absolute;
+  bottom: 55px;
+  left: 44px;
+  z-index: 2;
+}
+.car__door {
+  position: relative;
+}
+.car__door::before {
+  content: "";
+  width: 5px;
+  height: 80px;
+  background-color: #ffffff60;
+  position: absolute;
+  top: -95px;
+  left: 170px;
+  transform: skew(10deg);
+}
+.car__door::after {
+  content: "";
+  width: 5px;
+  height: 30px;
+  background-color: #ffffff60;
+  position: absolute;
+  bottom: 65px;
+  left: 304px;
+  transform: skew(20deg);
+}
+.car__handle {
+  width: 30px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff60;
+  position: absolute;
+  bottom: 70px;
+  left: 175px;
+}
+.car__handle::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  border-radius: 10%;
+  background-color: #fef082;
+  box-shadow: -2px 1px 2px #5f5f5b;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+}
+.car__mirror {
+  width: 30px;
+  height: 20px;
+  border-radius: 50% 50% 50% 50%;
+  border: 2px solid #0000006b;
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 240, 130, 1) 29%,
+    rgba(244, 224, 73, 1) 34%,
+    rgba(244, 224, 73, 1) 45%,
+    rgba(220, 234, 241, 1) 54%,
+    rgba(222, 231, 237, 1) 56%,
+    rgba(234, 234, 234, 1) 59%,
+    rgba(244, 224, 73, 1) 61%,
+    rgba(254, 240, 130, 1) 68%,
+    rgba(254, 240, 130, 1) 96%
+  );
+  position: absolute;
+  bottom: 85px;
+  left: 293px;
+  z-index: 2;
+  transform: rotate(10deg);
+}
+.car__antenna {
+  position: relative;
+  width: 2px;
+}
+.car__antenna::before {
+  content: "";
+  width: 2px;
+  height: 35px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 194px;
+  left: 150px;
+  transform: skew(50deg);
+}
+.car__antenna::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  bottom: 228px;
+  left: 127px;
+}
+.car__tube {
+  position: relative;
+  width: 25px;
+  height: 10px;
+  border-radius: 30%;
+  background-color: #000000;
+  bottom: 10px;
+  left: 10px;
+  z-index: 0;
+}
+.car__tube::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  box-shadow: -2px 5px 10px 10px #cecec7;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  animation-name: tube;
+  animation-duration: 2s;
+  transition-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes tube {
+  0% {
+    top: 0px;
+    box-shadow: none;
+  }
+  50% {
+    top: 2px;
+    box-shadow: -2px 5px 5px 2px #cecec7;
+  }
+  100% {
+    top: 4px;
+    box-shadow: -2px 5px 10px 10px #cecec7;
+  }
+}
