@@ -273,9 +273,11 @@ body {
   }
   95% {
     transform: translate(15%, -400%);
+    transform: scale(0.5, 0.5);
   }
   100% {
     transform: translate(15%, -500%);
+    transform: scale(0, 0);
   }
 }
 .nature__birds {
