@@ -568,7 +568,7 @@ body {
 }
 @keyframes wheel {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
   50% {
   }
@@ -653,7 +653,7 @@ body {
 }
 @keyframes wheels {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
   50% {
   }
